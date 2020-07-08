@@ -18,6 +18,39 @@
       background-size: cover;
       height: 100vh;
     }
+    .mobile-picture {
+        display: none;
+    }
+  .main-text {
+    padding: 0 10rem;
+    text-align: center;
+  }
+  h2 {
+      text-align: center;
+  }
+  .bottom {
+      padding-bottom: 2rem;
+  }
+    @media only screen and (max-width: 600px) {
+
+    .mobile-picture {
+        display: inherit;
+    }
+    img {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        max-width:100%;
+        max-height:100%;
+    }
+      main {
+        background: none; 
+      }
+      .main-text {
+        padding: 0;
+        font-size: medium;
+        text-align: justify;
+      }
+    }
     .container {
         position: absolute;
         top: 30vh;
@@ -26,6 +59,21 @@
         right: 0;
 
         margin: auto;
+        padding-bottom: 2rem;
+    }
+    @media only screen and (max-width: 600px) {
+      h2 {
+          display: none;
+      }
+      .container {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        margin: auto;
+      }
     }
     </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -35,18 +83,24 @@
 <body>
     <main role="main">
         <div class="container">
-            <h1 style="text-align: center; padding: 2rem;">THE JOURNEY TO FIND MY SIGNATURE SCENT</h1>
-            <div class="main-text" style="text-align: center; padding: 0 10rem;">
-                <p>Since leaving school, I have explored a number of potential career paths but I never found a role which felt like a perfect fit for me.</p>
-                <p>One of the career paths which I explored was fragrance marketing. During this period I worked closely with designers and realised that design was my vocation.</p>
-                <p>This creative submission is inspired by my experience in the fragrance marketing industry and how it led me towards design. The submission takes the form of a mini perfume catalogue.</p>
-                <p>The journey to find a signature perfume acts as a fitting metaphor for my search for the perfect career. Each fragrance represents a stage in my life which led me to finding the Shillington School of Graphic Design, my signature scent identity.</p>
-            </div>
-            <div class='link' style="text-align: center; font-size: 1.2rem;">
-                <a href="./slide.html">Begin the journey</a>
+            <div class="col-md-12">
+                <div class='mobile-picture'>
+                    <img src="./media/homepage_text.jpg" alt="Flower background">
+                </div>
+                <h2 class='top' style="font-style: italic;">The Journey To Find My</h2>
+                <h2 class='bottom'>SIGNATURE SCENT IDENTITY</h2>
+                <div class="main-text">
+                    <p>Since leaving school, I have explored a number of potential career paths but I never found a role which felt like a perfect fit for me.</p>
+                    <p>One of the career paths which I explored was fragrance marketing. During this period I worked closely with designers and realised that design was my vocation.</p>
+                    <p>This creative submission is inspired by my experience in the fragrance marketing industry and how it led me towards design. The submission takes the form of a mini perfume catalogue.</p>
+                    <p>The journey to find a signature perfume acts as a fitting metaphor for my search for the perfect career. Each fragrance represents a stage in my life which led me to finding the Shillington School of Graphic Design, my signature scent identity.</p>
+                </div>
+                <div class='link' style="text-align: center; font-size: 1.2rem;">
+                    <a href="./slide.html">Begin the journey</a>
+                </div>
             </div>
         </div>
-    <main role="main">
+    </main>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

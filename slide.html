@@ -132,6 +132,14 @@
       from {opacity: .4}
       to {opacity: 1}
     }
+
+    @media only screen and (max-width: 600px) {
+      .caption {
+        padding: 1rem;
+        font-size: medium;
+        text-align: justify;
+      }
+    }
     </style>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -147,7 +155,7 @@
                 <span class="sr-only">Loading...</span>
               </div>
             </div>
-            <div id="carouselExampleControls" class="carousel slide slideshow-container" style="display: none;" data-interval="false">
+            <div id="carouselExampleControls" class="carousel slide slideshow-container" style="display: none;" data-interval="false" data-wrap="false">
               <!-- <h1 style="text-align: center;">Beyond Scent</h1> -->
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -195,10 +203,10 @@
     slideTextMap = {
         0: 'My journey to find a signature scent was long - longer than I anticipated - but once I found what I was looking for I never looked back.',
         1: "I began my journey by studying architecture. I saw it as an opportunity to use my creative energy and eye for design to create something functional. I found that the emphasis on engineering and maths didn’t suit me.",
-        2: "I completed an undergraduate degree in languages. Languages represented an opportunity to communicate with new people and experience foreign cultures. During this period, I spent a year in Seville where I studied art with Paco Broca, a renowned Spanish artist. Under Paco’s mentorship I<br>re-discovered my passion for art.",
-        3: 'Feeling rudderless after my undergraduate degree, I decided that I needed to study something which would help me get a job. I put my passion for art and culture to the back of my mind and enrolled in a masters degree in marketing. While I learned the value of communication through design, I ultimately found that marketing was too predatorial for my personality.',
-        4: "I found a marketing role in a fragrance company based in Barcelona. During my time here I worked closely with designers and realised that design was my calling. It was at this moment that I decided to stop playing it safe and pursue my passion for design.",
-        5: "I discovered the Shillington School of Graphic Design and saw it as an opportunity for me to redirect all of the things I loved from my previous experiences towards my calling. The course has all of the ingredients I have been searching for: people, creativity, communication. Now I have finally found my signature scent - a blend of ingredients that is undeniably me, an eau de parfum I will wear for the rest of my life.",
+        2: "I completed an undergraduate degree in languages. Languages represented an opportunity to communicate with new people and experience foreign cultures. During this period, I spent a year in Seville where I studied art with Paco Broca, a renowned Spanish artist. Under Paco’s mentorship I re-discovered my passion for art.",
+        3: 'Feeling rudderless after my undergraduate degree, I decided that I needed to study something which would help me with my career. I put my passion for art and culture to the back of my mind and enrolled in a masters degree in marketing. While I learned the value of communication through design, I ultimately found that marketing was too predatorial for my personality.',
+        4: "After my masters, I found a marketing role in a fragrance company based in Barcelona. During my time there I worked closely with designers and realised that design was my calling. It was at this moment that I decided to stop playing it safe and pursue my passion for design.",
+        5: "When I discovered the Shillington School of Graphic Design it was like something dreamt into existence. I saw it as an opportunity for me to redirect all of the things I loved from my previous experiences. The course has all of the ingredients I have been searching for: people, creativity, communication. I have finally found my signature scent - a blend of ingredients that is undeniably me, an eau de parfum I will wear for the rest of my life.",
     }
 
     slideFootnoteMap = {
